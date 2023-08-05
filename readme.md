@@ -1,1 +1,1 @@
-Python
+"Investify" is a portmanteau of "Invest" and "Amplify," encapsulating the essence of the project. It represents the platform's mission to empower users to make informed investment decisions and amplify their financial growth.
