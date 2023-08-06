@@ -24,11 +24,11 @@ def investment_strategy(request):
     if request.method == 'POST':
         form = InvestmentForm(request.POST)
         if form.is_valid():
+            # Get the form data and process it
             risk_tolerance = form.cleaned_data['risk_tolerance']
             time_horizon = form.cleaned_data['time_horizon']
             investment_amount = form.cleaned_data['investment_amount']
             emergency_fund_percentage = form.cleaned_data['emergency_fund_percentage']
-
             # Convert investment_amount to float
             investment_amount = float(investment_amount)
 
@@ -57,4 +57,4 @@ def investment_strategy(request):
     else:
         form = InvestmentForm()
 
-    return render(request, 'investment_form.html', {'form': form})
+    return render(request, 'services.html', {'form': form})
