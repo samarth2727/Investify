@@ -1,0 +1,27 @@
+<!-- investment_strategy.html -->
+<html>
+    <head>
+
+    </head>
+    <body>
+
+
+<h1>Investment Strategy Recommendations</h1>
+<p>Allocate {{ stock_amount }} to stocks, {{ mutual_fund_amount }} to mutual funds, and {{ emergency_fund_amount }} to emergency funds.</p>
+
+<h2>Recommended Stocks:</h2>
+<ul>
+    {% for stock in stocks %}
+        <li>{{ stock.name }}</li>
+    {% endfor %}
+</ul>
+
+<h2>Recommended Mutual Funds:</h2>
+<ul>
+    {% for mutual_fund in mutual_funds %}
+        <li>{{ mutual_fund.name }}</li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>

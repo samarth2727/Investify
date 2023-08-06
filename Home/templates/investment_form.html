@@ -1,0 +1,15 @@
+<!-- investment_form.html -->
+<html>
+    <head>
+
+    </head>
+    <body>
+    
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Submit</button>
+</form>
+    
+</body>
+</html>
