@@ -150,8 +150,8 @@ https://templatemo.com/tm-545-finance-business
         <div class="row">
           <div class="col-md-12">
             <div class="section-heading">
-              <h2>Request a <em>call back</em></h2>
-              <span>interdum nisl ac urna tempor mollis</span>
+              <h2>Invest<em>fy</em></h2>
+              <span></span>
             </div>
           </div>
           <div class="col-md-12">
@@ -219,39 +219,7 @@ https://templatemo.com/tm-545-finance-business
         </div>
       </div>
     </div>
-    <form method="post" action="{% url 'investment_strategy' %}">
-        {% csrf_token %}
-        <label for="risk_tolerance">Risk Tolerance:</label>
-        <select id="risk_tolerance" name="risk_tolerance">
-            <option value="1">Low</option>
-            <option value="2">Medium</option>
-            <option value="3">High</option>
-        </select>
-
-        <br>
-
-        <label for="time_horizon">Time Horizon:</label>
-        <select id="time_horizon" name="time_horizon">
-            <option value="1">Short-term</option>
-            <option value="2">Medium-term</option>
-            <option value="3">Long-term</option>
-        </select>
-
-        <br>
-
-        <label for="investment_amount">Investment Amount:</label>
-        <input type="number" id="investment_amount" name="investment_amount" step="0.01" min="0">
-
-        <br>
-
-        <label for="emergency_fund_percentage">Emergency Fund Percentage:</label>
-        <input type="number" id="emergency_fund_percentage" name="emergency_fund_percentage" min="0" max="100">
-
-        <br>
-
-        <button type="submit">Calculate Investment Strategy</button>
-    </form>
-
+    
     <!-- Footer Starts Here -->
     <footer>
       <div class="container">
