@@ -150,7 +150,17 @@ https://templatemo.com/tm-545-finance-business
           <br> To stocks: <span style="color: #a4c639; font-weight: bold;">  {{ stock_amount }}</span>
           <br> To mutual funds:<span style="color: #a4c639; font-weight: bold;">{{ mutual_fund_amount }}</span>  
           <br> To emergency funds:<span style="color: #a4c639; font-weight: bold;">{{ emergency_fund_amount }}</span> </p>
-      </div>
+      
+          <div class="suggested-sips">
+            <h3>Suggested SIPs</h3>
+            <ul>
+              {% for sip in suggested_sips %}
+                <li>{{ sip.name }} - {{ sip.type }} - {{ sip.amount }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+      
+        </div>
 
       <!-- <h2>Recommended Stocks:</h2>
       <ul>
