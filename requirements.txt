@@ -1,0 +1,8 @@
+asgiref==3.7.2
+Django==4.2.4
+packaging==23.1
+ply==3.11
+psycopg2==2.9.7
+sip==6.7.11
+sqlparse==0.4.4
+tzdata==2023.3
