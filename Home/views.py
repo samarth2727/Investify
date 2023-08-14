@@ -43,16 +43,12 @@ def investment_strategy(request):
             emergency_fund_amount = emergency_fund_allocation * investment_amount
 
             # Replace this with your actual SIP suggestion logic
-            suggested_sips = [
-                {'name': 'SIP Option 1', 'type': 'Equity', 'amount': 100},
-                {'name': 'SIP Option 2', 'type': 'Debt', 'amount': 150}
-            ]
-
+          
             return render(request, 'investment_strategy.html', {
                 'stock_amount': stock_amount,
                 'mutual_fund_amount': mutual_fund_amount,
                 'emergency_fund_amount': emergency_fund_amount,
-                'suggested_sips': suggested_sips,
+              
             })
 
     else:
